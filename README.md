@@ -48,18 +48,25 @@ The system is architected around a decoupled design where the CLI and the Worker
 Here are screenshots demonstrating the key functionalities of `queuectl`.
 
 #### 1. Enqueuing Jobs & Checking Initial Status
-This shows adding new jobs to the queue and the initial status summary.
-`queuectl enqueue '...'` and `queuectl status`
+This shows adding new jobs to the queue and the initial status summary before any workers are started.
+
+![Enqueuing Jobs and Checking Status](assets/screenshots/1-enqueue-and-status.png)
 
 #### 2. Workers Processing Jobs in Parallel
-This screenshot captures the real-time log output from two workers processing jobs concurrently. Note the different PIDs.
+This screenshot captures the real-time log output from two workers processing jobs concurrently. The first image shows the workers starting, and the second shows their live log output.
+
+![Starting parallel workers](assets/screenshots/2.0-parallel-workers.png)
+![Live log output from parallel workers](assets/screenshots/2.1-parallel-workers.png)
 
 #### 3. Job Failure, Retry, and DLQ
-This output shows a job failing, being retried with exponential backoff, and finally moving to the Dead Letter Queue (DLQ) after exhausting its retries.
+This output shows a job failing, being retried, and finally moving to the Dead Letter Queue (DLQ) after exhausting its retries.
+
+![Job Failure and DLQ](assets/screenshots/3-failure-and-dlq.png)
 
 #### 4. Listing and Managing the DLQ
 This demonstrates listing jobs in the DLQ and manually retrying a failed job.
-`queuectl dlq list` and `queuectl dlq retry <job-id>`
+
+![DLQ Management](assets/screenshots/4-dlq-management.png)
 
 ---
 
