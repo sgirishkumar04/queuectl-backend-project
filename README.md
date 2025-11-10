@@ -4,6 +4,15 @@ This project is a minimal, production-grade background job queue system built wi
 
 ---
 
+### Live Demo
+
+A video demonstration of the key features is available. The folder contains two videos showcasing the system in action.
+
+[🎥 **Watch the Project Demo Videos**](https://amritavishwavidyapeetham-my.sharepoint.com/:f:/g/personal/cb_en_u4cse22150_cb_students_amrita_edu/EsUFQdgvJkFLkXKuflDcK-EBDDaNtH8Bq60D8wEYmV8LdQ?e=DKOZ5B)
+
+---
+
+
 ### Project Goal
 
 The objective is to build a fully functional, command-line-driven job queue called `queuectl`. The system is designed to handle asynchronous tasks reliably, manage worker processes, persist job data across restarts, and provide a clean, intuitive CLI for all operations.
